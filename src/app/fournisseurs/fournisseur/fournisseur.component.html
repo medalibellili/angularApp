@@ -1,0 +1,109 @@
+
+ <section id="main-content">
+         
+    <section class="wrapper">
+            
+      <!--overview start-->
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="page-header"><i class="fa fa-laptop"></i> Gestion  du  Founisseur</h3>
+          <ol class="breadcrumb">
+            <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+            <li><i class="fa fa-laptop"></i>Dashboard</li>
+            <li><i class="fa fa-laptop"></i>Gestion  du  Founisseur</li>
+
+          </ol>
+        </div>
+      </div>
+      
+
+      <!-- project team & activity end -->
+
+    </section>
+    
+  </section>
+<div class="jumbtron">
+    
+<h1 class="display-4 text-center">Founisseur Register</h1>
+<hr>
+
+<div class="row">
+<div class="col-md-11">
+  <!--contaner-->
+      
+    
+    
+<div class="row">
+    <div class="col-lg-12">
+      <section class="panel">
+        <header class="panel-heading">
+          <b>Ajouter un nouveau Fournisseur</b>
+        </header>
+        <div class="panel-body">
+          <div class="form">
+            <form class="form-validate form-horizontal" id="feedback_form" method="get" action="" #form="ngForm" (submit)="onSubmit(form)">
+              <input type="hidden" name="FournisseurID" #FournisseurID="ngModel" [(ngModel)]="service.formData.FournisseurID">
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Libelle </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="text" required name="Libelle" #Libelle="ngModel" [(ngModel)]="service.formData.Libelle"/>
+                  
+                </div>
+             </div>
+
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Adresse </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="text" required name="Adresse" #Adresse="ngModel" [(ngModel)]="service.formData.Adresse"/>
+                  
+                </div>
+             </div>
+
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Telephonne </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="text" required name="Telephonne" #Telephonne="ngModel" [(ngModel)]="service.formData.Telephonne"/>
+                  
+                </div>
+             </div>
+
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Email </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="text" required name="Email" #Email="ngModel" [(ngModel)]="service.formData.Email"/>
+                  
+                </div>
+             </div>
+
+
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Responsable </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="text" required name="Responsable" #Responsable="ngModel" [(ngModel)]="service.formData.Responsable"/>
+                  
+                </div>
+             </div>
+             
+
+
+              <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                  <button class="btn btn-primary" type="submit" [disabled]="form.invalid">Save</button>
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </div>
+</div>
+    
+    
+    
+ <!-- end container -->
+</div>
+
+</div>
+</div>

@@ -1,0 +1,36 @@
+
+<div class="row">
+    <div class="col-lg-12">
+      <section class="panel">
+        <header class="panel-heading">
+          <b>Ajouter un nouveau Direction</b>
+        </header>
+        <div class="panel-body">
+          <div class="form">
+            <form class="form-validate form-horizontal" id="feedback_form" method="get" action="" #form="ngForm" (submit)="onSubmit(form)">
+              <input type="hidden" name="DirectionID" #DirectionID="ngModel" [(ngModel)]="service.formData.DirectionID">
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Libelle </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="text" required name="Libelle" #Libelle="ngModel" [(ngModel)]="service.formData.Libelle"/>
+                  
+                </div>
+             </div>
+
+
+             
+
+
+              <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                  <button class="btn btn-primary" type="submit" [disabled]="form.invalid">Save</button>
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </div>
+</div>

@@ -1,0 +1,103 @@
+
+ <section id="main-content">
+         
+    <section class="wrapper">
+            
+      <!--overview start-->
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="page-header"><i class="fa fa-laptop"></i> Gestion  du  Utilisateur</h3>
+          <ol class="breadcrumb">
+            <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+            <li><i class="fa fa-laptop"></i>Dashboard</li>
+            <li><i class="fa fa-laptop"></i>Gestion  du  Utilisateur</li>
+
+          </ol>
+        </div>
+      </div>
+      
+
+      <!-- project team & activity end -->
+
+    </section>
+    
+  </section>
+<div class="jumbtron">
+    
+<h1 class="display-4 text-center">Utilisateur Register</h1>
+<hr>
+
+<div class="row">
+<div class="col-md-11">
+  <!--contaner-->
+      
+    
+    
+<div class="row">
+    <div class="col-lg-12">
+      <section class="panel">
+        <header class="panel-heading">
+          <b>Ajouter un nouveau Utilisateur</b>
+        </header>
+        <div class="panel-body">
+          <div class="form">
+            <form class="form-validate form-horizontal" id="feedback_form" method="get" action="" #form="ngForm" (submit)="onSubmit(form)">
+              <input type="hidden" name="UtilisateurID" #UtilisateurID="ngModel" [(ngModel)]="service.formData.UtilisateurID">
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Nom </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="text" required name="Nom" #Nom="ngModel" [(ngModel)]="service.formData.Nom"/>
+                  
+                </div>
+             </div>
+
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Matricule </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="text" required name="Matricule" #Matricule="ngModel" [(ngModel)]="service.formData.Matricule"/>
+                  
+                </div>
+             </div>
+
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Password </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="password" required name="Password" #Password="ngModel" [(ngModel)]="service.formData.Password"/>
+                  
+                </div>
+             </div>
+
+             <div class="form-group " >
+                <label for="cname" class="control-label col-lg-2">Role </label>
+                <div class="col-lg-10">
+                  <input class="form-control" id="cname" type="text" required name="Role" #Role="ngModel" [(ngModel)]="service.formData.Role"/>
+                  
+                </div>
+             </div>
+
+
+            
+             
+
+
+              <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                  <button class="btn btn-primary" type="submit" [disabled]="form.invalid">Save</button>
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </div>
+</div>
+    
+    
+    
+ <!-- end container -->
+</div>
+
+</div>
+</div>
